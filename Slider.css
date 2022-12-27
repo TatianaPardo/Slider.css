@@ -1,0 +1,195 @@
+/*Slider*/
+
+.DECOSlider{
+  overflow-x: hidden;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100vw;
+}
+.DECOSlider-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    will-change: transform;
+  }
+.DECOSlider-element{
+    width: 100vw;
+    max-width: 1440px;
+    position: relative;
+  }
+.DECOSlider-element-image{
+      width: 100vw;
+      height: 38vw;
+      max-width: 1440px;
+      max-height: 550px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      display: block;
+    }
+    
+/*Button*/
+
+.DECOSlider-buttons-controls{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 100%;
+      position: absolute;
+      top: calc(50% - 40px);
+    }
+.DECOSlider-buttons-controls-button{
+        line-height: 1;
+        padding-bottom: 7px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        cursor: pointer;
+        width: 40px;
+        color: ${Color-buttom};
+        height: 40px;
+        border: none;
+        border-radius: 40px;
+        background-color: rgba(255,255,255,0.5);
+      }
+.DECOSlider-buttons-controls-button img{
+          width: 100%;
+        }
+.DECOSlider-buttons-controls-button .pause{
+          display: none;
+        }
+        
+/*Dots*/
+
+
+.DECOSlider-buttons-dots{
+      left: 0;
+      position: absolute;
+      bottom: 15px;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0 20px;
+      margin: 0 auto;
+      width: 100vw;
+    }
+.DECOSlider-buttons-dots-element{
+        cursor: pointer;
+        border: solid 2px ${Color-dots};
+        border-radius: 50%;
+        margin: 0 10px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        padding: 0;
+      }
+.DECOSlider-buttons-dots-element.active{
+          background-color: ${Color-dots-active};
+        }
+
+/*Mobile*/
+
+@media(max-width: 600px){
+  
+.DECOSlider{
+  max-width: 359px;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.DECOSlider-element-image{
+        width: 100vw;
+        height: 146vw;
+    }
+    
+/*Buttons*/
+
+.DECOSlider-buttons{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse
+  }
+.DECOSlider-buttons-controls-button{
+          width: 6vw
+      }
+      
+/*Dots*/
+
+.DECOSlider-buttons-dots{
+        margin: 0 auto
+    }
+.DECOSlider-buttons-dots-element{
+          width: 4vw;
+          height: 4vw;
+          margin: 0 2vw;
+          border-width: .7vw
+      }
+.DECOSliderMini{
+    padding-bottom: 5vw;
+    width: 90vw
+}
+.DECOSliderMini-element{
+      width: 90vw
+  }
+.DECOSliderMini-element-image{
+        width: 90vw;
+        height: 42.18vw
+    }
+.DECOSliderMini-element-info{
+        font-size: 4vw;
+        min-height: 12vw
+    }
+.DECOSliderMini-buttons{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse
+  }
+.DECOSliderMini-buttons-controls-button{
+          width: 6vw
+      }
+.DECOSliderMini-buttons-dots{
+        margin: 0 auto
+    }
+.DECOSliderMini-buttons-dots-element{
+          width: 4vw;
+          height: 4vw;
+          margin: 0 2vw;
+          border-width: .7vw
+      }
+  
